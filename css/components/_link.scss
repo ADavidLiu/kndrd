@@ -1,0 +1,28 @@
+.link {
+    &__label {
+        margin-right: .833rem;
+        @include atMedium {
+            margin-right: .625rem;
+        }
+    }
+
+    &__arrow {
+        height: .833rem;
+        transition: all .25s;
+        @include atMedium {
+            height: .625rem;
+        }
+    }
+
+    &:hover {
+        .link__arrow {
+            transform: translateX(3px);
+        }
+    }
+
+    &--hover-drk {
+        &:hover {
+            color: $color-black;
+        }
+    }
+}

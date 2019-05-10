@@ -1,0 +1,106 @@
+html,
+body {
+    overflow-x: hidden;
+    font-size: 2.25vw;
+    @include atSmall {
+        font-size: 13px;
+    }
+    @include atLarge {
+        font-size: 15px;
+    }
+    @include atExtralarge {
+        font-size: 16px;
+    }
+}
+
+main {
+    position: relative;
+}
+
+section {
+    &:not(:last-child) {
+        margin-bottom: 6.875rem;
+    }
+}
+
+hr {
+    margin: 0;
+    border-top: 1px solid $color-gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    @extend .h1;
+}
+
+h2 {
+    @extend .h2;
+}
+
+h3 {
+    @extend .h3;
+}
+
+h4 {
+    @extend .h4;
+}
+
+h5 {
+    @extend .h5;
+}
+
+p,
+li {
+    @extend .p;
+}
+
+a {
+    cursor: pointer;
+    transition: all .25s;
+    @include linkStates(inherit, none);
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+input,
+button,
+select,
+textarea {
+    border: none;
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

@@ -1,0 +1,43 @@
+// Colors
+$color-primary: #82C1C4;
+$color-primary-lgt: #B0D8DA;
+
+$color-secondary: #F0DED7;
+$color-tertiary: #F0DE91;
+
+$color-white: #ffffff;
+
+$color-gray: #D1D1D6;
+$color-gray-lgt: #FAFAFC;
+$color-gray-drk: #8E8E93;
+
+$color-black: #111111;
+$color-black-full: #000000;
+
+
+// Typography
+@font-face {
+    font-family: "Helvetica";
+    font-weight: 300;
+    src: url("../fonts/HelveticaLight.ttf");
+}
+
+@font-face {
+    font-family: "Helvetica";
+    font-weight: 400;
+    src: url("../fonts/HelveticaRegular.ttf");
+}
+
+@font-face {
+    font-family: "Helvetica";
+    font-weight: 500;
+    src: url("../fonts/HelveticaMedium.ttf");
+}
+
+@font-face {
+    font-family: "Helvetica";
+    font-weight: 700;
+    src: url("../fonts/HelveticaBold.ttf");
+}
+
+$font-main: "Helvetica", "Arial", sans-serif;

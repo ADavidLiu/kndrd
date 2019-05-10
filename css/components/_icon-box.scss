@@ -1,0 +1,40 @@
+.icon-boxes {
+    margin-bottom: -3.333rem !important;
+    @include atMedium {
+        margin-bottom: -6.25rem !important;
+    }
+}
+
+.icon-box {
+    margin-bottom: 3.333rem;
+    @include atMedium {
+        margin-bottom: 6.25rem;
+    }
+    
+    &__img-wrapper {
+        height: 4.833rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        @include atMedium {
+            height: 3.625rem;
+        }
+
+        img {
+            max-height: 100%;
+        }
+    }
+
+    &__title {
+        margin: 1.583rem 0 2rem 0;
+        @include atMedium {
+            margin: 1.1875rem 0 1.5rem 0;
+        }
+    }
+
+    &__copy {
+        @include atMedium {
+            max-width: 20rem;
+        }
+    }
+}

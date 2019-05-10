@@ -1,0 +1,62 @@
+.directory {
+    &__group {
+        &-items {
+            margin: -4px -2px;
+        }
+
+        &-title {
+            line-height: 1;
+            margin-bottom: .833rem;
+            letter-spacing: 1px;
+            @include atMedium {
+                margin-bottom: .625rem;
+            }
+        }
+
+        & + & {
+            margin-top: 1.4167rem;
+            @include atMedium {
+                margin-top: 1.0625rem;
+            }
+        }
+    }
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 4px;
+        border: 1px solid $color-black;
+        margin: 4px 2px;
+        background-color: $color-white;
+        text-align: center;
+        transition: all .25s;
+
+        &-icon {
+            margin-right: .667rem;
+            width: 1.667rem;
+            @include atMedium {
+                width: 1.25rem;
+                margin-right: .5rem;
+            }
+        }
+
+        &-label {
+            line-height: 1;
+            transform: translateY(1px);
+            flex: 1;
+            @include atMedium {
+                transform: translateY(2px);
+            }
+        }
+
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 1.667rem rgba($color-black-full, .06);
+            @include atMedium {
+                box-shadow: 0 10px 1.25rem rgba($color-black-full, .06);
+            }
+        }
+    }
+}

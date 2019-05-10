@@ -1,0 +1,61 @@
+.featured {
+    background-color: $color-primary-lgt;
+    @include atMedium {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    &__img {
+        height: 25rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        pointer-events: none;
+        user-select: none;
+        @include atMedium {
+            height: auto;
+            width: 47.5%;
+            order: 2;
+        }
+    }
+
+    &__copy {
+        padding: 3.333rem;
+        @include atMedium {
+            order: 1;
+            width: 52.5%;
+            padding: 4.375rem 2.6875rem 4.375rem 4.6875rem;
+        }
+    }
+
+    &--alt {
+        background-color: $color-white;
+        box-shadow: 0 0 10px rgba($color-black, .06);
+        @include atMedium {
+            padding: 5rem 5.3125rem 5.3125rem 4.8125rem;
+            align-items: center;
+        }
+
+        .featured {
+            &__img {
+                height: auto;
+                padding: 3.333rem;
+                padding-top: 0;
+                @include atMedium {
+                    padding: 0;
+                    padding-left: 5rem;
+                }
+                @include atLarge {
+                    padding-left: 8.125rem;
+                }
+            }
+
+            &__copy {
+                @include atMedium {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

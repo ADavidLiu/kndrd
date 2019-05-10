@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#82C1C4">
+    <title>KNDRD | Find your next coliving home</title>
+    <link rel="shortcut icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header" v-bind:class="{ 'is-open': isOpen }">
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-12">
+    				<div class="header__content">
+    					<a href="#" class="header__logo"><img src="images/kndrd-logo.svg" alt="Logo"
+    							class="header__logo-img"></a>
+    					<button class="header__btn header__btn--alt" @click="toggleNav">
+    						<span class="header__btn-line"></span>
+    						<span class="header__btn-line"></span>
+    						<span class="header__btn-line"></span>
+    					</button>
+    					<nav class="header__nav">
+    						<button class="header__nav-btn" @click="toggleNav">
+    							<span class="header__nav-btn-line"></span>
+    							<span class="header__nav-btn-line"></span>
+    							<span class="header__nav-btn-line"></span>
+    						</button>
+    						<ul class="header__menu">
+    							<li><a href="#">Find a Home</a></li>
+    							<li><a href="#">Management System</a></li>
+    							<li><a href="#">Blog</a></li>
+    							<li><a href="#">Get a Demo</a></li>
+    							<li><a href="#">Log In</a></li>
+    						</ul>
+    					</nav>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+
+    <main>
+        <section class="hero hero--no-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-7 mb-5 mb-md-0">
+                        <img src="images/laptop.png" alt="Laptop showing our management software" class="w-100">
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h1>A platform designed to elevate your CoLiving business.</h1>
+                        <p class="p--lg mb-5 mt-4">Kndrd makes it easy to manage all aspects of running a CoLiving property so you can focus on building community and giving your tribe an unforgettable experience.</p>
+                        <a href="#" class="btn btn--outline-black px-5">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 offset-md-1 order-md-2 mb-5 mb-md-0">
+                    <img src="images/people.png" alt="People" class="w-100">
+                </div>
+                <div class="col-12 col-md-7 order-md-1">
+                    <h2 class="mb-4">Get listed on the hottest CoLiving<br class="d-none d-md-block"><span class="d-md-none">&nbsp;</span>directory without any booking fees.</h2>
+                    <p class="mb-4">That’s right, we do not charge any booking fees.</p>
+                    <p class="mb-4">We believe in collaboration over competition and strive to provide both residents and operators community with the best possible CoLiving experience out there. Our sustainable business model drives meaninfull connections, honest pricing and lasting relations.</p>
+                    <a href="#" class="u-weight-med p link"><span class="link__label">Get listed today</span><img src="images/i-arrow.svg" alt="Arrow pointing to the right" class="link__arrow"></a>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7 mb-5 mb-md-0">
+                    <img src="images/manage-entire-business.svg" alt="Image" class="w-100">
+                </div>
+                <div class="col-12 col-md-5 pl-md-4">
+                    <h2 class="mb-4">Manage your entire CoLiving business from one platform.</h2>
+                    <p class="mb-4">Kndrd makes it easy to manage all aspects of running a CoLiving property so you can focus on building community and giving your tribe an unforgettable experience.</p>
+                    <a href="#" class="u-weight-med p link"><span class="link__label">Get started</span><img src="images/i-arrow.svg" alt="Arrow pointing to the right" class="link__arrow"></a>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="featured featured--alt">
+                        <div class="featured__copy">
+                            <h2>Financial management made<br class="d-none d-lg-block"><span class="d-lg-none">&nbsp;</span>simple, fast and transparant.</h2>
+                            <p class="mt-4 mb-5 mb-md-4">There is nothing more important than financial oversight when it comes to managing a coliving space. Our management software allows you to track and facilitate payments and have full reporting and financial oversight.</p>
+                            <a href="#" class="p u-weight-med link link--hover-drk"><span class="link__label">Click here to schedule a 1:1 demo</span><img src="images/i-arrow.svg" alt="Arrow pointing to the right" class="link__arrow"></a>
+                        </div>
+                        <img src="images/financial-management.png" alt="Stripe" class="featured__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row u-margin-bottom-xl">
+                <div class="col-12 text-center">
+                    <h2 class="mb-2">The best CoLiving software for you<br class="d-none d-md-block"><span class="d-md-none">&nbsp;</span>and your residents</h2>
+                    <p>Transform your colivig space into a smart and agile business.</p>
+                </div>
+            </div>
+            <div class="row align-items-md-center align-items-xl-end">
+                <div class="col-8 offset-2 col-md-5 offset-md-0 mb-5 mb-md-0">
+                    <img src="images/manage-all-operations.svg" alt="Image" class="w-100">
+                </div>
+                <div class="col-12 col-md-6 offset-md-1">
+                    <h2 class="u-margin-bottom-lg">Manage all operations</h2>
+                    <div class="u-margin-bottom-lg">
+                        <h5 class="mb-3">Booking management</h5>
+                        <p class="pl-4">The Reservation Manager allows for easy and streamlined bookings and reservations in the most intuitive and time-efficient manner.</p>
+                    </div>
+                    <div class="u-margin-bottom-lg">
+                        <h5 class="mb-3">Asset management</h5>
+                        <p class="pl-4">Provide the most detailed depiction of your property in order to attract target clientele. Personalize the characteristics of each home including the community, amenities, and layout to gain best-fitting residents accordingly.</p>
+                    </div>
+                    <div>
+                        <h5 class="mb-3">Maintenance management</h5>
+                        <p class="pl-4">The Maintenance Manager organizes the needs and services requested by residents to optimize turnaround and the delivery of needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row u-margin-bottom-lg-2">
+                <div class="col-12 text-center">
+                    <h2>Full Financial Control</h2>
+                </div>
+            </div>
+            <div class="row icon-boxes">
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Expense Manager Icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Expense manager</h5>
+                        <p class="icon-box__copy">Allow residents to build up extra charges by shared services such as delivery, subscribtions etc. automaticlly add extra expenses to the invoice manager.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Invoice Manager Icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Invoice manager</h5>
+                        <p class="icon-box__copy">Autoamtically generate invoices and keep track of payments, including who owes what and what has been paid.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Payment Manager Icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Payment manager</h5>
+                        <p class="icon-box__copy">Collect payments online with Visa, Amex, Mastercard, PayPall, direct bank transfer and more…</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row u-margin-bottom-lg-2">
+                <div class="col-12 text-center">
+                    <h2>Marketing and Sales</h2>
+                </div>
+            </div>
+            <div class="row icon-boxes">
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Directory listing icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Listed on CoLiving Directory</h5>
+                        <p class="icon-box__copy">Get listed in our CoLiving directory and drive more sales, optimise your occupency and minimise vacancies.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Lead management icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Lead management</h5>
+                        <p class="icon-box__copy">Organize your Resident leads and quickly funnel them as an application.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Payment Manager Icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Premium Reporting</h5>
+                        <p class="icon-box__copy">Gain access to extensive reporting and analytics for valuable insights that can enhance home efficiency for optimal marketing and sales.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Resident onboarding icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Resident onboarding</h5>
+                        <p class="icon-box__copy">The on-boarding module allows for ease of handling resident applications.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Resident Testimonials Icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Resident testimonials</h5>
+                        <p class="icon-box__copy">Manage testimonials and reviews left by residents on the home.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Testimonial replies Icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Testimonial replies</h5>
+                        <p class="icon-box__copy">Reply to testimonials and reviews to interact and respond.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Credit check icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Credit Check</h5>
+                        <p class="icon-box__copy">Ensure that residents can cover the cost by integrating an external credit check.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Background check icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Background Check</h5>
+                        <p class="icon-box__copy">Clear applicants for booking into the home with an integrated background check.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Speed test Icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Speed tests</h5>
+                        <p class="icon-box__copy">Allow your residents to capture speed tests of your location to give extra confidence to your residents.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row u-margin-bottom-lg-2">
+                <div class="col-12 text-center">
+                    <h2>Community Management</h2>
+                </div>
+            </div>
+            <div class="row icon-boxes">
+                <div class="col-12 col-md-4 mb-5 mb-md-0">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Resident communication icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Resident communication</h5>
+                        <p class="icon-box__copy">Connect with your current and previous residents in the global Kndrd Ecosystem.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-5 mb-md-0">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Operator communication.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Operator communication</h5>
+                        <p class="icon-box__copy">Connect with all Coliving Operators in the entire global Kndrd Ecosystem.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="icon-box">
+                        <div class="icon-box__img-wrapper">
+                            <img src="images/Calender integration icon.svg" alt="Icon">
+                        </div>
+                        <h5 class="icon-box__title">Calendar integration</h5>
+                        <p class="icon-box__copy">A calendar offering local and global events as well as bookings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-2">Product Roadmap</h2>
+                    <p class="mb-3 pb-1">Currently in development.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 u-margin-top-lg">
+                    <h5 class="mb-3">Resident management (CRM)</h5>
+                    <p>Manage communications and preferences in this CoLiving Resident Management system.</p>
+                </div>
+                <div class="col-12 col-md-4 u-margin-top-lg">
+                    <h5 class="mb-3">Resident manager</h5>
+                    <p>A communication features with residents.</p>
+                </div>
+                <div class="col-12 col-md-4 u-margin-top-lg">
+                    <h5 class="mb-3">Resident Screening - Peer Review</h5>
+                    <p>Upgrade allowing peer review to better intake prospective residents.</p>
+                </div>
+                <div class="col-12 col-md-4 u-margin-top-lg">
+                    <h5 class="mb-3">Point of sale</h5>
+                    <p>Capabilities to accept payment off of any platform, at any time.</p>
+                </div>
+                <div class="col-12 col-md-4 u-margin-top-lg">
+                    <h5 class="mb-3">Referral Promo Code Incentive</h5>
+                    <p>Enjoy incentives for referring a resident.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="u-bg-secondary text-center u-padding-top-lg u-padding-bottom-xl u-padding-horizontal-xl-2">
+                        <div class="u-margin-bottom-lg">
+                            <h2 class="mb-2">Enterprise Solution</h2>
+                            <p>Transform your colivig space into a smart and agile business.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-5 mb-md-0">
+                                <h5 class="mb-2">Private-Label</h5>
+                                <p>We implement your brand look and feel to optimise your CoLiving experience.</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-5 mb-md-0">
+                                <h5 class="mb-2">Multi-Venue</h5>
+                                <p>Support the growth of your organisation to multiple locations.</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <h5 class="mb-2">Built for Teams</h5>
+                                <p>Specify how many User logins you would like to associate with your CoLiving team.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cta-section">
+                        <img src="images/book.png" alt="Woman smiling" class="cta-section__img">
+                        <div class="cta-section__copy">
+                            <h2>Get Started Today</h2>
+                            <p class="mb-5 mt-4 my-md-4 mb-md-4">Talk directly with our team and experience how Kndrd CoLiving management can benefit your business.</p>
+                            <a href="#" class="btn px-md-5">Book your 1:1 call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="subscribe">
+                        <h3>Subscribe to our newsletter</h3>
+                        <p class="p--md my-4">A weekly newsletter on the future of co-living, useful<br>industry insights and updates to our platform.</p>
+                        <form action="#" class="subscribe__form">
+                            <input type="email" placeholder="Enter email address" class="no-shadow" required>
+                            <button class="p p--md u-weight-med link" type="submit"><span class="link__label">Subscribe</span><img src="images/i-arrow.svg" alt="Arrow pointing to the right" class="link__arrow"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 order-md-2">
+                    <div class="footer__directory directory">
+                        <div class="directory__group">
+                            <p class="p--md u-weight-bld directory__group-title">DIRECTORY</p>
+                            <div class="directory__group-items">
+                                <a href="#" class="directory__item"><img src="images/flag-nl.svg" alt="Flag of The Netherlands" class="directory__item-icon"><p class="p--xs directory__item-label">Netherlands</p></a>
+                                <a href="#" class="directory__item"><img src="images/flag-nl.svg" alt="Flag of The Netherlands" class="directory__item-icon"><p class="p--xs directory__item-label">Netherlands</p></a>
+                                <a href="#" class="directory__item"><img src="images/flag-nl.svg" alt="Flag of The Netherlands" class="directory__item-icon"><p class="p--xs directory__item-label">Netherlands</p></a>
+                                <a href="#" class="directory__item"><img src="images/flag-nl.svg" alt="Flag of The Netherlands" class="directory__item-icon"><p class="p--xs directory__item-label">Netherlands</p></a>
+                                <a href="#" class="directory__item"><img src="images/flag-nl.svg" alt="Flag of The Netherlands" class="directory__item-icon"><p class="p--xs directory__item-label">Netherlands</p></a>
+                                <a href="#" class="directory__item"><img src="images/flag-nl.svg" alt="Flag of The Netherlands" class="directory__item-icon"><p class="p--xs directory__item-label">Netherlands</p></a>
+                                <a href="#" class="directory__item"><img src="images/flag-nl.svg" alt="Flag of The Netherlands" class="directory__item-icon"><p class="p--xs directory__item-label">Netherlands</p></a>
+                                <a href="#" class="directory__item"><img src="images/flag-nl.svg" alt="Flag of The Netherlands" class="directory__item-icon"><p class="p--xs directory__item-label">Netherlands</p></a>
+                            </div>
+                        </div>
+                        <div class="directory__group">
+                            <p class="p--md u-weight-bld directory__group-title">CITIES</p>
+                            <div class="directory__group-items">
+                                <a href="#" class="directory__item"><p class="p--xs directory__item-label">Amsterdam</p></a>
+                                <a href="#" class="directory__item"><p class="p--xs directory__item-label">Amsterdam</p></a>
+                                <a href="#" class="directory__item"><p class="p--xs directory__item-label">Amsterdam</p></a>
+                                <a href="#" class="directory__item"><p class="p--xs directory__item-label">Amsterdam</p></a>
+                                <a href="#" class="directory__item"><p class="p--xs directory__item-label">Amsterdam</p></a>
+                                <a href="#" class="directory__item"><p class="p--xs directory__item-label">Amsterdam</p></a>
+                                <a href="#" class="directory__item"><p class="p--xs directory__item-label">Amsterdam</p></a>
+                                <a href="#" class="directory__item"><p class="p--xs directory__item-label">Amsterdam</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 order-md-1">
+                    <nav class="footer__nav">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <p class="p--md u-weight-bld footer__title">PLATFORM</p>
+                                <ul class="footer__menu">
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Product Roadmap</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <p class="p--md u-weight-bld footer__title">RESOURCES</p>
+                                <ul class="footer__menu">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Podcast</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <p class="p--md u-weight-bld footer__title">COMMNUNITY</p>
+                                <ul class="footer__menu">
+                                    <li><a href="#">Residents</a></li>
+                                    <li><a href="#">Operators</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <p class="p--md u-weight-bld footer__title">CONTACT</p>
+                                <ul class="footer__menu">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="footer__sub">
+                        <div class="footer__logos">
+                            <img src="images/kndrd-logo-color.svg" alt="KNDRD logo" class="footer__logos-item">
+                            <img src="images/logo-arcadis.jpg" alt="Arcadis logo" class="footer__logos-item">
+                            <img src="images/logo-techstars.png" alt="Techstars logo" class="footer__logos-item">
+                        </div>
+                        <div class="footer__links">
+                            <div class="row">
+                                <div class="col-6 col-md-3 order-md-2">
+                                    <p class="p--sm order-md-1"><a href="#">Terms of Service</a></p>
+                                </div>
+                                <div class="col-6 col-md-3 order-md-3">
+                                    <p class="p--sm order-md-1"><a href="#">Privacy Policy</a></p>
+                                </div>
+                                <div class="col-12 col-md-6 order-md-1 mt-4 mt-md-0">
+                                    <p class="p--sm order-md-1">© 2019 KNDRD Inc. All rights reserved</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

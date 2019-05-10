@@ -1,0 +1,95 @@
+.h1 {
+    font-family: $font-main;
+    color: $color-black;
+    font-weight: 700;
+    font-size: 2.667rem;
+    line-height: 1.1875;
+    @include atMedium {
+        font-size: 2rem;
+    }
+}
+
+.h2 {
+    font-family: $font-main;
+    color: $color-black;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.467;
+    @include atMedium {
+        font-size: 1.875rem;
+    }
+}
+
+.h3 {
+    font-family: $font-main;
+    color: $color-black;
+    font-weight: 700;
+    font-size: 2.333rem;
+    line-height: 1.214;
+    @include atMedium {
+        font-size: 1.75rem;
+    }
+}
+
+.h4 {
+    font-family: $font-main;
+    color: $color-black;
+    font-weight: 700;
+    font-size: 2.167rem;
+    line-height: 1.192;
+    @include atMedium {
+        font-size: 1.625rem;
+    }
+}
+
+.h5 {
+    font-family: $font-main;
+    color: $color-black;
+    font-weight: 500;
+    font-size: 1.833rem;
+    line-height: 1.25;
+    @include atMedium {
+        font-size: 1.375rem;
+    }
+}
+
+.p {
+    font-family: $font-main;
+    color: $color-black;
+    font-size: 1.4167rem;
+    line-height: 1.529;
+    @include atMedium {
+        font-size: 1.0625rem;
+    }
+
+    &--xs {
+        font-size: 1.083rem;
+        line-height: 2;
+        @include atMedium {
+            font-size: .8125rem;
+        }
+    }
+
+    &--sm {
+        font-size: 1.167rem;
+        @include atMedium {
+            font-size: .875rem;
+        }
+    }
+
+    &--md {
+        font-size: 1.333rem;
+        line-height: 1.625;
+        @include atMedium {
+            font-size: 1rem;
+        }
+    }
+
+    &--lg {
+        font-size: 1.583rem;
+        line-height: 1.473;
+        @include atMedium {
+            font-size: 1.1875rem;
+        }
+    }
+}

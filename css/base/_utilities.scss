@@ -1,0 +1,100 @@
+// Color
+.u-color {
+    &-black {
+        color: $color-black;
+    }
+
+    &-white {
+        color: $color-white;
+    }
+
+    &-primary {
+        color: $color-primary;
+    }
+}
+
+
+// Background
+.u-bg {
+    &-secondary {
+        background-color: $color-secondary;
+    }
+}
+
+
+// Font weight
+.u-weight {
+    &-med {
+        font-weight: 500;
+    }
+
+    &-bld {
+        font-weight: 700;
+    }
+}
+
+
+// Margin
+.u-margin {
+    &-top {
+        &-lg {
+            margin-top: 3.125rem;
+        }
+    }
+
+    &-bottom {
+        &-lg {
+            margin-bottom: 3.125rem;
+
+            &-2 {
+                margin-bottom: 6.25rem;
+            }
+        }
+
+        &-xl {
+            margin-bottom: 6.875rem;
+        }
+    }
+}
+
+
+// Padding
+.u-padding {
+    &-top {
+        &-lg {
+            padding-top: 4.6875rem;
+        }
+    }
+
+    &-bottom {
+        &-xl {
+            padding-bottom: 6.5625rem;
+        }
+    }
+
+    &-horizontal {
+        &-xl {
+            &-2 {
+                padding-left: 7.5rem;
+                padding-right: 7.5rem;
+            }
+        }
+    }
+}
+
+
+// Line height
+.u-lh {
+    &-lg {
+        line-height: 3.333rem;
+        @include atMedium {
+            line-height: 2.5rem;
+        }
+    }
+}
+
+
+// Shadow
+.no-shadow {
+    box-shadow: none;
+}

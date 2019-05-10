@@ -1,0 +1,26 @@
+.feature-box {
+    padding: 5.333rem 2.5rem 2.083rem 2.5rem;
+    background-color: $color-white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 1.667rem rgba($color-black-full, .06);
+    @include atMedium {
+        padding: 4rem 1.875rem 1.5625rem 1.875rem;
+        box-shadow: 0 0 1.25rem rgba($color-black-full, .06);
+        height: 100%;
+    }
+
+    &__icon {
+        height: 8.333rem;
+        max-width: 50%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 3.75rem;
+        @include atMedium {
+            height: 6.25rem;
+        }
+    }
+}

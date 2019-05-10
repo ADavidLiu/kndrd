@@ -1,0 +1,50 @@
+.link-box {
+    height: 10.25rem;
+    border-radius: 8px;
+    border: 1px solid $color-gray;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+    background-color: $color-white;
+    transition: all .25s;
+    @include atMedium {
+        height: 7.6875rem;
+    }
+
+    &__media {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 9.4167rem;
+        @include atMedium {
+            width: 7.0625rem;
+        }
+    }
+
+    &__copy {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 2.6875rem;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 1.667rem rgba($color-black-full, .06);
+        @include atMedium {
+            box-shadow: 0 10px 1.25rem rgba($color-black-full, .06);
+        }
+    }
+
+    & + & {
+        margin-top: 2.5rem;
+        @include atMedium {
+            margin-top: 0;
+            margin-left: 5rem;
+        }
+    }
+}

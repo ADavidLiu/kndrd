@@ -1,0 +1,32 @@
+.cta-section {
+    @include atMedium {
+        padding: 0 10rem;
+    }
+    @include atLarge {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12rem;
+    }
+
+    &__img {
+        width: 18.3125rem;
+        max-width: 40%;
+        display: block;
+        margin: 0 auto 2.5rem auto;
+        @include atMedium {
+            margin-bottom: 1.875rem;
+        }
+        @include atLarge {
+            margin-right: 5rem;
+            margin-bottom: 0;
+        }
+    }
+
+    &__copy {
+        text-align: center;
+        @include atMedium {
+            flex: 1;
+        }
+    }
+}

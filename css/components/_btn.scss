@@ -1,0 +1,91 @@
+.btn {
+    border-radius: 8px;
+    height: 4.167rem;
+    background-color: $color-primary-lgt;
+    border: 1px solid $color-primary-lgt;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 2.083rem;
+    @extend .p;
+    @include atMedium {
+        height: 3.125rem;
+        font-size: 1.125rem;
+        padding: 0 1.5625rem;
+    }
+
+    &:hover {
+        color: $color-black;
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+    }
+
+    &--sm {
+        font-size: 1.4167rem;
+        text-align: center;
+        @include atMedium {
+            font-size: 1.0625rem;
+        }
+    }
+
+    &--outline {
+        border: 2px solid $color-white;
+        color: $color-white;
+        border-color: $color-white;
+        background: transparent;
+        @include linkStates($color-white, none);
+
+        &:hover {
+            color: $color-primary;
+            background-color: $color-white;
+            border-color: $color-white;
+        }
+    }
+
+    &--outline-drk {
+        border: 2px solid $color-gray;
+        color: $color-black;
+        border-color: $color-gray;
+        background: transparent;
+        @include linkStates($color-black, none);
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-black;
+            border-color: $color-black;
+        }
+    }
+
+    &--outline-black {
+        border: 2px solid $color-black;
+        color: $color-black;
+        border-color: $color-black;
+        background: transparent;
+        @include linkStates($color-black, none);
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-black;
+            border-color: $color-black;
+        }
+    }
+
+    &--shadow {
+        box-shadow: 0 0 10px rgba($color-black-full, .15);
+    }
+
+    &--white {
+        background-color: $color-white;
+        border-color: $color-white;
+
+        &:hover {
+            border-color: $color-primary;
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+}
